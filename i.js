@@ -19,7 +19,7 @@ reflexGomb.addEventListener('click', () => {
         eredmeny.textContent = 'Túl korán';
         clearTimeout(reflexTimeout);
     }else {
-        const elteltido = new Date();
-        eredmeny.textContent = `Idő: ${elteltido - kattido} ms`;
+        const elteltido = new Date() - kattido;
+        eredmeny.textContent = `Idő: ${elteltido} ms`;
     }
 });
